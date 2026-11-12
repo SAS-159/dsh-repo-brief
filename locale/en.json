@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Repo brief",
+    "description": "Adds a repo_brief tool so the agent maps an unfamiliar repository in one call instead of a dozen exploratory ones."
+  }
+}

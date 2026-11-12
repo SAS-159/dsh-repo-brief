@@ -1,0 +1,42 @@
+{
+  "name": "dsh-repo-brief",
+  "version": "0.1.0",
+  "description": "Registers a repo_brief tool: one call returns a compact map of a repository — languages, entry points, scripts, test command, recent and largest files — instead of a dozen exploratory calls.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "tool",
+    "repository",
+    "onboarding",
+    "efficiency"
+  ],
+  "license": "MIT",
+  "author": "dsh-repo-brief contributors",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "dist/index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.2"
+  }
+}
