@@ -7,8 +7,8 @@
 
 export function buildEntry(owner, packageName) {
   const description = {
-    en: 'Registers a repo_brief tool: one call returns a compact map of a repository — languages, package.json scripts and dependencies, likely entry points, the test command, recently modified and largest files, and top-level directories. Read-only: it stats and reads, never writes or runs commands.',
-    zh: '注册 repo_brief 工具：一次调用摸清仓库——语言构成、package.json 脚本与依赖、可能的入口、测试命令、最近修改与最大文件、顶层目录。只读：只做 stat 与读取，不写文件、不执行命令。',
+    en: 'Registers a repo_brief tool: one call returns a compact map of a repository — languages, package.json scripts and dependencies, likely entry points, the test command, recently modified and largest files, and top-level directories. Read-only: it stats and reads, never writes or runs commands. Replaces the dozen exploratory calls an agent otherwise spends on an unfamiliar project.',
+    zh: '注册 repo_brief 工具：一次调用摸清仓库——语言构成、package.json 脚本与依赖、可能的入口、测试命令、最近修改与最大文件、顶层目录。只读：只做 stat 与读取，不写文件、不执行命令。替代 Agent 进入陌生项目时那十几次探索调用。',
   }
   const lines = [
     `url: https://github.com/${owner}/${packageName}`,
